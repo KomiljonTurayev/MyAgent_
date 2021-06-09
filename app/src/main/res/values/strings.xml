@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My Agent</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="google_api_key">AIzaSyA7gDntTbbYJ80qD-Av0hbFXkRuk2ZBBqo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send">Send some \ngrmdlkm</string>
+    <string-array name="category">
+        <item>Сначало популярные</item>
+        <item>Old</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Сначало популярные</item>
+        <item>Makro</item>
+        <item>Havas</item>
+        <item>Konzinka</item>
+
+    </string-array>
+
+
+    <string-array name="drink_filtr">
+        <item>Сначало популярные</item>
+        <item>Сортировать по имени</item>
+        <item>Сортировать по дате</item>
+        <item>Сортировать по цене</item>
+    </string-array>
+
+
+</resources>

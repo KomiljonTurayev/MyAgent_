@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_person"
+            android:title="Мой профиль" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_food"
+            android:title="Продовольственные" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_non_food"
+            android:title="Непродовольственные" />
+        <item
+            android:id="@+id/nav_slidesho"
+            android:icon="@drawable/ic_user_list"
+            android:title="Список поставщиков" />
+
+        <item
+            android:id="@+id/nav_slideshow2"
+            android:icon="@drawable/ic_prosent"
+            android:title="Накопленные проценты" />
+        <item
+            android:id="@+id/nav_slideshow3"
+            android:icon="@drawable/ic_offers"
+            android:title="Акции и предложения" />
+
+        <item
+            android:id="@+id/nav_lang"
+            android:icon="@drawable/ic_order"
+            android:title="Мои заказы" />
+
+<!--        <item android:id="@+id/nav_lang"-->
+<!--            android:icon="@android:drawable/ic_menu_manage"-->
+<!--            android:title="Language"-->
+<!--            app:actionLayout="@layout/spinner_menu"/>-->
+
+        <item
+            android:id="@+id/nav_slideshow6"
+            android:icon="@drawable/ic_about_work"
+            android:title="Как работает" />
+        <item
+            android:id="@+id/nav_slideshow7"
+            android:icon="@drawable/ic_questions_anwers"
+            android:title="Вопросы и ответы" />
+        <item
+            android:id="@+id/nav_slideshow8"
+            android:icon="@drawable/ic_offer"
+            android:title="Публичная оферта" />
+    </group>
+
+
+
+            <item android:title="" />
+            <item
+                android:id="@+id/nav_share"
+                android:ellipsize="end"
+                android:icon="@drawable/ic_call_icon"
+                android:scrollHorizontally="true"
+                android:title="call center \n998 93 004 10 24"
+                android:visible="true"
+                app:iconTint="#FF9D33"
+                app:itemBackground="@color/design_default_color_surface"
+                app:itemIconTint="#FF9D33"
+                app:itemMaxLines="2"
+                app:itemTextColor="#FF9D33"
+                app:tint="#FF9D33" />
+
+
+
+
+</menu>

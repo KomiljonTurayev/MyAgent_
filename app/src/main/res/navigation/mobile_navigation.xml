@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.myagent.ui.auth.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" />
+    <fragment
+        android:id="@+id/authDataFragment"
+        android:name="com.example.myagent.ui.auth.AuthDataFragment"
+        android:label="fragment_auth_data"
+        tools:layout="@layout/fragment_auth_data" />
+    <fragment
+        android:id="@+id/nav_all_product"
+        android:name="com.example.myagent.ui.allproducts.AllProductFragment"
+        android:label="fragment_all_product"
+        tools:layout="@layout/fragment_all_product" >
+        <action
+            android:id="@+id/action_nav_all_product_to_nav_basket"
+            app:destination="@id/nav_basket"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_all_product_to_favouriteFragment"
+            app:destination="@id/favouriteFragment"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_basket"
+        android:name="com.example.myagent.ui.basket.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_nav_basket_to_favouriteFragment"
+            app:destination="@id/favouriteFragment"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_basket_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFoodFragment"
+        android:name="com.example.myagent.ui.favourite.FavouriteFoodFragment"
+        android:label="fragment_favourite_food"
+        tools:layout="@layout/fragment_favourite_food" >
+        <action
+            android:id="@+id/action_favouriteFoodFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/cannedProductsFragment"
+        android:name="com.example.myagent.ui.category.CannedProductsFragment"
+        android:label="fragment_canned_products"
+        tools:layout="@layout/fragment_canned_products" />
+    <fragment
+        android:id="@+id/selectedProductInfoFragment"
+        android:name="com.example.myagent.ui.category.SelectedProductInfoFragment"
+        android:label="fragment_selected_product_info"
+        tools:layout="@layout/fragment_selected_product_info" >
+        <action
+            android:id="@+id/action_selectedProductInfoFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/suppliersListFragment"
+        android:name="com.example.myagent.ui.suppliers.SuppliersListFragment"
+        android:label="fragment_suppliers_list"
+        tools:layout="@layout/fragment_suppliers_list" >
+        <action
+            android:id="@+id/action_suppliersListFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_suppliersListFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_suppliersListFragment_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/suppliersInfoFragment"
+        android:name="com.example.myagent.ui.suppliers.SuppliersInfoFragment"
+        android:label="fragment_suppliers_info"
+        tools:layout="@layout/fragment_suppliers_info" >
+        <action
+            android:id="@+id/action_suppliersInfoFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionsAndAnswersFragment"
+        android:name="com.example.myagent.ui.questions.QuestionsAndAnswersFragment"
+        android:label="fragment_questions_and_answers"
+        tools:layout="@layout/fragment_questions_and_answers" >
+        <action
+            android:id="@+id/action_questionsAndAnswersFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_questionsAndAnswersFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_questionsAndAnswersFragment_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.example.myagent.ui.questions.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+
+        tools:layout="@layout/fragment_privacy_policy" >
+        <action
+            android:id="@+id/action_privacyPolicyFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_privacyPolicyFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_privacyPolicyFragment_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/howDoesItWorksFragment"
+        android:name="com.example.myagent.ui.questions.HowDoesItWorksFragment"
+        android:label="fragment_how_does_it_works"
+        tools:layout="@layout/fragment_how_does_it_works" >
+        <action
+            android:id="@+id/action_howDoesItWorksFragment_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_howDoesItWorksFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_howDoesItWorksFragment_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.example.myagent.ui.basket.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_nav_order_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_alert"
+        android:name="com.example.myagent.ui.basket.AlertFragment"
+        android:label="fragment_alert"
+        tools:layout="@layout/fragment_alert" >
+        <action
+            android:id="@+id/action_nav_alert_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_product_category"
+        android:name="com.example.myagent.ui.category.ProductCategoryFragment"
+        android:label="fragment_product_category"
+        tools:layout="@layout/fragment_product_category" >
+        <action
+            android:id="@+id/action_nav_product_category_to_nav_all_product"
+            app:destination="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_product_category_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_nav_product_category_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_wine"
+        android:name="com.example.myagent.ui.category.WineFragment"
+        android:label="fragment_wine"
+        tools:layout="@layout/fragment_wine" >
+        <action
+            android:id="@+id/action_nav_wine_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_suppliers"
+        android:name="com.example.myagent.ui.suppliers.SuppliersFragment"
+        android:label="fragment_suppliers"
+        tools:layout="@layout/fragment_suppliers" />
+    <fragment
+        android:id="@+id/nav_questions_answers"
+        android:name="com.example.myagent.ui.communication.QuestionsAnswersFragment"
+        android:label="fragment_questions_answers"
+        tools:layout="@layout/fragment_questions_answers" >
+        <action
+            android:id="@+id/action_nav_questions_answers_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_questions_answers_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_nav_questions_answers_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_history_order"
+        android:name="com.example.myagent.ui.order.HistoryOrderFragment"
+        android:label="fragment_history_order"
+        tools:layout="@layout/fragment_history_order" >
+        <action
+            android:id="@+id/action_nav_history_order_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_history_order_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_nav_history_order_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.example.myagent.ui.auth.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" >
+        <action
+            android:id="@+id/action_nav_my_profile_to_nav_all_product"
+            app:destination="@id/nav_all_product"
+            app:popUpTo="@id/nav_all_product" />
+        <action
+            android:id="@+id/action_nav_my_profile_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_nav_my_profile_to_nav_basket"
+            app:destination="@id/nav_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.myagent.ui.favourite.FavouriteFragment"
+        android:label="fragment_fovourite"
+        tools:layout="@layout/fragment_fovourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_nav_basket"
+            app:destination="@id/nav_basket"
+            app:popUpTo="@id/nav_all_product" />
+    </fragment>
+</navigation>

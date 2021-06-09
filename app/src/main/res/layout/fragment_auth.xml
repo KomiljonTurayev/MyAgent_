@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FBFE"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.auth.AuthFragment">
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/ttcommons_regular"
+        android:text="O'zbek"
+        android:textColor="#231F20"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="147dp"
+        android:layout_below="@id/language"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logotype" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputtext_1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_page_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/rounded_login"
+
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/ttcommons_medium"
+            android:hint="Имя пользователя"
+            android:inputType="text"
+            android:maxLength="30"
+            android:textColorHint="#231F20"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputtext_2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputtext_1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:hint="Пароль"
+        app:boxBackgroundMode="outline"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_page_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_login"
+            android:drawableStart="@drawable/ic_unlock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/ttcommons_medium"
+            android:inputType="textPassword"
+            android:maxLength="30"
+
+            android:textColorHint="#231F20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputtext_2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/roinded_login_noborder"
+        android:fontFamily="@font/ttcommons_demibold"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="@color/main_color_red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/ttcommons_demibold"
+        android:text="Umbrella soft"
+        android:textColor="#696A6B"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

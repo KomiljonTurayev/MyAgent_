@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_recycler_view"
+    android:layout_marginBottom="16dp">
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </VideoView>
+    <TextView
+        android:id="@+id/text_of_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#231F20"
+        android:textSize="16sp"
+        android:fontFamily="@font/ttcommons_medium"/>
+
+
+
+
+</LinearLayout>
