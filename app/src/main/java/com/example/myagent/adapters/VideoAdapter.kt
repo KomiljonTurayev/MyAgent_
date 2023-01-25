@@ -6,9 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myagent.R
 import com.example.myagent.network.dto.MockData
-import com.google.android.youtube.player.YouTubeInitializationResult
-import com.google.android.youtube.player.YouTubePlayer
-import com.google.android.youtube.player.YouTubePlayerView
 import kotlinx.android.synthetic.main.item_how_does_it_work.view.*
 
 
